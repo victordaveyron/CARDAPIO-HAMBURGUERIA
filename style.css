@@ -1,0 +1,102 @@
+:root {
+  --lenha: #300201;
+  --vemelho: #5c0f09;
+  --vermelho-fogo: #961011;
+  --alho: #eaddcd;
+  --queijo: #d68209;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  
+}
+
+a {
+  color:inherit;
+}
+
+body {
+  background-color: var(--lenha);
+}
+
+.main-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 15rem;
+  padding-top: 4rem;
+}
+
+.img-main {
+  width: 25rem;
+  margin-top: -2rem;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-whats {
+  width: 20rem;
+  height: 3.5rem;
+  
+  background-color: var(--lenha);
+  color: var(--alho);
+  
+  border-radius: 50px;
+  border: 3px solid var(--alho);
+  font-size: 24pt;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(5,7,6,0.5);
+  
+}
+
+
+.btn-menu {
+  width: 20rem;
+  height: 3.5rem;
+  
+  background-color: var(--lenha);
+  color: var(--alho);
+  
+  border-radius: 50px;
+  border: 3px solid var(--alho);
+  font-size: 24pt;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(5,7,6,0.5);
+  
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* CARDAPIO */
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--vemelho);
+}
+
+

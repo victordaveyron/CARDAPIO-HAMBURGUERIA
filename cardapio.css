@@ -1,0 +1,391 @@
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'foodzone';
+  src: url('fonts/foodzone.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  --lenha: #300201;
+  --vermelho: #5c0f09;
+  --vermelho-fogo: #961011;
+  --alho: #eaddcd;
+  --queijo: #d68209;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+
+a {
+  color:inherit;
+}
+
+body {
+  background-color: var(--alho);
+  font-family: "roboto", Sans-Serif;
+}
+
+/* CARDAPIO */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem ;
+  background-color: var(--vemelho);
+  color: var(--queijo);
+  
+  height: 2rem;
+}
+
+h2 {
+   font-family: 'foodzone', Sans-Serif;
+}
+
+
+/*  ITENS  */
+.itens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.img-burguer {
+  width: 60px;
+  height: 60px;
+}
+
+.img-pizza {
+  width: 90px;
+  height: 70px;
+}
+
+.img-fritas {
+  width: 80px;
+  height: 80px;
+}
+
+.img-trio {
+  width: 80px;
+  height: 80px;
+}
+
+
+    /*  SESSAO BURGUERS  */
+.cardapio-burguers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: var(--vermelho-fogo);
+  color: var(--alho);
+  
+  min-height: 40rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.header .burguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burguer>h2 {
+  color: var(--queijo);
+  font-size: 40px;
+}
+
+    /*  ITENS BURGUERS  */
+.item-cardapio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.burguer>img {
+  width: 80px;
+  height: 80px;
+}
+
+.burguer .info>h3 {
+  color: var(--queijo);
+}
+
+.descricao-preco {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.burguer .descricao-preco>p {
+  font-size: 9pt;
+  padding-left: 1rem;
+}
+
+
+.burguer .preco {
+  color: var(--queijo);
+  font-weight: bold;
+  margin-left: 1rem;
+  font-size: 18pt;
+}
+    /* FIM ITENS BURGUERS */
+
+    /*  DESTAQUES BURGUERS  */
+    
+.especiais {
+    font-size: 30pt;
+    color: var(--queijo);
+    margin-top: 1rem;
+  }
+    
+.destaque-burguer {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  padding: 1rem;
+  
+  overflow-x: auto; /*arrastar horizontalmente*/
+  scroll-snap-type: x mandatory; /*encaixa os cards ao scrollar*/
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch; /*scroll suave*/
+  max-width: 100%;
+}
+
+.destaques {
+  flex: 0 0 auto; /*impede que o card encolha*/
+  scroll-snap-align: center; /*faz o snap centralizar o card*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 10rem;
+  height: 10rem;
+  margin-top: 2rem;
+  
+  background-color: var(--queijo);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.destaques>img {
+  display: flex;
+  width: 6rem;
+}
+
+.destaques>h2 {
+ color: var(--vermelho-fogo);
+ padding-top: 0.3rem;
+}
+
+.destaques>p {
+  text-align: center;
+  font-size: 9pt;
+}
+
+
+/*  RODAPE BURGUER   */
+.footer-burguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.footer-burguer>img {
+  max-height: 12rem;
+  min-height: 5rem;
+  height: auto;
+}
+
+.delivery {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.delivery>h2 {
+  color: var(--queijo);
+  font-size: 40px;
+}
+
+.delivery>button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 18pt;
+  background-color: var(--queijo);
+  font-weight: bold;
+  color: var(--vermelho-fogo);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+}
+    /* FIM SESSAO BURGUERS */
+
+  /* ---------------------------*/
+
+    /*  SESSAO PIZZA  */
+.cardapio-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: var(--queijo);
+  color: var(--vermelho);
+  
+  min-height: 40rem;
+  padding: 1rem;
+}
+
+.header .pizza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza>h2 {
+  color: var(--vermelho-fogo);
+  font-size: 40pt;
+}
+
+.pizza>img {
+  width: 70px;
+  height: 70px;
+  margin-right: 0.4rem;
+}
+
+.pizza .info>h3 {
+  color: var(--vermelho-fogo);
+}
+
+.pizza .info .descricao-preco>p {
+  font-size: 9pt;
+  color: var(--alho);
+  padding-left: 1rem;
+}
+
+.pizza .preco {
+  color: var(--vermelho-fogo);
+  font-weight: bold;
+  margin-left: 1rem;
+  font-size: 18pt;
+}
+
+.descricao-preco>p {
+  color: (--alho);
+}
+
+/*  CARROSSEL PIZZA */
+
+/* Área visível do carrossel */
+.carrossel {
+  width: 365px;              /* Largura de uma imagem */
+  height: 150px;             /* Altura do carrossel */
+  overflow: hidden;          /* Esconde o que estiver fora da área */
+  border-radius: 10px;
+  margin: 20px auto;         /* Centraliza o carrossel */
+}
+
+/* Container com todas as imagens enfileiradas */
+.slides {
+  display: flex;             
+  width: calc(365px * 4);    /* 300px x número de imagens */
+  animation: slide 12s infinite; /* Tempo total e repetição */
+}
+
+/* Cada slide individual */
+.slide {
+  width: 365px;
+  flex-shrink: 0;            /* Impede que os slides encolham */
+}
+
+/* Imagem dentro do slide */
+.slide img {
+  width: 365px;
+  height: auto;
+  object-fit: cover;         /* Mantém o enquadramento sem distorcer */
+  display: block;
+}
+
+/* Animação automática do carrossel */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-365px); }
+  50%  { transform: translateX(-730px); }
+  75% { transform: translateX(-1095px); }
+  100% { transform: translateX(0); }
+}
+
+/*  FOOTER PIZZA */
+
+.footer-pizza {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.footer-pizza>img {
+  max-height: 12rem;
+  min-height: 5rem;
+  height: auto;
+}
+
+.footer-pizza .delivery {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.footer-pizza .delivery>h2 {
+  color: var(--vermelho-fogo);
+  font-size: 40px;
+}
+
+.footer-pizza .delivery>button {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 10px;
+  font-size: 18pt;
+  background-color: var(--vermelho-fogo);
+  font-weight: bold;
+  color: var(--queijo);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+}
+    /*  FIM SESSAO PIZZA  */
+
+
+
+
+
+
+
+
+
+
