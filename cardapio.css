@@ -391,23 +391,119 @@ h2 {
   
 
   color: var(--queijo);
-  
-  min-height: 40rem;
-  padding: 1rem;
 }
 
-.header .fritas {
+.header.fritas {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 
-.fritas>h2 {
+.fritas >h2 {
   color: var(--vermelho-fogo);
   font-size: 40pt;
+
+  margin-bottom: -2rem;
 }
 
+.fritas>h3 {
+  font-size: 18pt;
+}
 
+.itens.fritas{
+  display: flex;
+  flex-direction: column;
+}
+
+.fritas.tradicionais{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+  gap: 2rem;
+}
+
+.fritas.tradicionais >img {
+  max-width: 12rem;
+  margin-right: 2rem;
+}
+
+.porcoes {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  
+  font-family: 'foodzone', Sans-Serif;
+  
+  color: var(--vermelho-fogo);
+
+}
+
+.porcoes.fritas {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+
+  width: 8rem;
+  height: 7rem;
+
+  padding: 1rem;
+  
+  font-family: 'foodzone', Sans-Serif;
+  
+  background-color: var(--queijo);
+  /*border: 1px solid red;*/
+  border-radius: 10px;
+}
+
+.porcoes >p {
+  color:var(--alho);
+  font-family: 'roboto',sans-serif;
+}
+
+/*  BACON  */
+
+.porcoes.bacon {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+
+  width: 8rem;
+  height: 7rem;
+
+  padding: 1rem;
+  
+  font-family: 'foodzone', Sans-Serif;
+  
+  background-color: var(--queijo);
+  border-radius: 10px;
+}
+
+.fritas.bacon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+  gap: 2rem;
+}
+
+.fritas.bacon >img {
+  max-width: 12rem;
+  margin-right: 2rem;
+}
+
+.bacon .porcoes >p {
+  color:var(--alho);
+  font-family: 'roboto',sans-serif;
+}
+
+.porcoes.bacon >img {
+  max-width: 12rem;
+  margin-right: 2rem;
+}
 
 
 
