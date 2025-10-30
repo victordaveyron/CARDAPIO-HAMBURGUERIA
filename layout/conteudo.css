@@ -1,0 +1,29 @@
+
+header #titulo-principal {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:inherit
+}
+
+header .a {
+  font-weight: bold;
+}
+
+.container-menu>img {
+  width: 60px;
+  height: 60px;
+}
+
+.container-menu p {
+  font-size: 10pt;
+}
+
+.pratos p {
+  border: 1px solid blue;
+  max-width: 300px;
+  margin-top: 3px;
+}

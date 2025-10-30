@@ -16,8 +16,8 @@ body {
 }
 
 header,nav, main, aside, footer {
-    margin:3px;
-    display:flex;
+    margin: 3px;
+    display: flex;
     background: #a1a1a1
 }
 
@@ -50,13 +50,15 @@ nav {
 }
 
 .container-menu {
-    background: #c2c2c2;
-    width: 80px;
-    height: 80px;
-    margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background: #c2c2c2;
+  width: 80px;
+  height: 80px;
+  margin: 5px 0;
 }
-
-
 
 main {
     flex: 20 1 500px;
@@ -64,19 +66,62 @@ main {
 }
 
 .cardapio {
+    display: flex;
     background: #c2c2c2;
     flex: 1 1 100vw;
     margin: 5px;
+    flex-wrap: wrap;
+}
+
+.cardapio h3, .container-cardapio {
+  flex: 1 1 100vw;
+  margin: 5px;
+  border: 1px solid red;
+}
+
+.container-cardapio {
+    display: flex;
+    height: 100px;
+}
+
+.pratos {
+  border: 1px solid red;
+  flex: 1 1 100vw;
+  margin: 3px 10px;
 }
 
 
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+  flex: 1 1 100vw;
+}
+
 aside {
+    justify-content: center;
+    align-items: center;
     flex: 1 1 200px;
 }
 
+#promocoes {
+  display: flex;
+  height: 80px;
+  flex: 1 1 100vw;
+  background: #c2c2c2;
+  margin: 10px;
+}
+
 footer {
+    justify-content: center;
     flex: 1 1 100vw;
-    height: 50px;
+}
+
+.container-footer {
+  flex: 1 1 100vw;
+  height: 50px;
+  background: #c2c2c2;
+  margin: 3px;
 }
 
 @media only screen and (min-width: 838px){
@@ -87,6 +132,11 @@ footer {
     
     .container-menu {
         margin: 5px;
+    }
+    
+    #promocoes {
+      height: 100vh;
+    
     }
 }
 
@@ -108,5 +158,22 @@ footer {
 
     footer {
         order: 4;
+        flex-direction: column;
+    }
+    
+    .container-footer{
+      max-height: 100px;
+    }
+    
+    #informacoes {
+      order: 1;
+    }
+    
+    #instagram {
+      order: 0;
+    }
+    
+    #avisos {
+      order: 2;
     }
 }
