@@ -102,24 +102,30 @@ aside {
     justify-content: center;
     align-items: center;
     flex: 1 1 200px;
+    padding: 3px;
 }
 
 #promocoes {
   display: flex;
   height: 80px;
   flex: 1 1 100vw;
-  background: #c2c2c2;
   margin: 10px;
 }
 
 footer {
+    display: felx;
     justify-content: center;
     flex: 1 1 100vw;
+    height: 200px;
+    
 }
 
 .container-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex: 1 1 100vw;
-  height: 50px;
   background: #c2c2c2;
   margin: 3px;
 }
@@ -128,6 +134,7 @@ footer {
     nav {
         flex: 1 1 90px;
         flex-direction: column;
+        max-height: 500px;
     }
     
     .container-menu {
@@ -135,8 +142,13 @@ footer {
     }
     
     #promocoes {
-      height: 100vh;
+      height: 400px;
     
+    }
+
+    aside {
+      max-height: 500px;
+
     }
 }
 
@@ -165,15 +177,4 @@ footer {
       max-height: 100px;
     }
     
-    #informacoes {
-      order: 1;
-    }
-    
-    #instagram {
-      order: 0;
-    }
-    
-    #avisos {
-      order: 2;
-    }
 }

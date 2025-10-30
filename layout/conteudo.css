@@ -13,6 +13,11 @@ header .a {
   font-weight: bold;
 }
 
+aside img{
+  width: 400px;
+  height: 100px;
+}
+
 .container-menu>img {
   width: 60px;
   height: 60px;
@@ -26,4 +31,13 @@ header .a {
   border: 1px solid blue;
   max-width: 300px;
   margin-top: 3px;
+}
+
+.container-footer {
+  font-size: 10pt;
+  align-items: center;
+}
+
+.container-footer p {
+  margin: 2px;
 }
