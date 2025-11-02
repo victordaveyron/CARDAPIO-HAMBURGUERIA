@@ -1,45 +1,48 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    margin: 3px;
-    flex: 1 1 100vw;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 3px;
+  flex: 1 1 100vw;
+  flex-wrap: wrap;
 }
 
-header,nav, main, aside, footer {
-    margin: 3px;
-    display: flex;
+header,
+nav,
+main,
+aside,
+footer {
+  margin: 3px;
+  display: flex;
 }
 
 header {
-    flex: 1 1 100vw;
-    height: 50px;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
+  flex: 1 1 100vw;
+  height: 50px;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
 }
 
 #titulo-principal {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
 }
 
 header a {
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  margin-left: auto;
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    flex: 1 1 100vw;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 100vw;
 
 }
 
@@ -54,25 +57,26 @@ nav {
 }
 
 main {
-    flex: 20 1 500px;
-    flex-wrap: wrap;
+  flex: 20 1 500px;
+  flex-wrap: wrap;
 }
 
 .cardapio {
-    display: flex;
-    flex: 1 1 100vw;
-    margin: 5px;
-    flex-wrap: wrap;
+  display: flex;
+  flex: 1 1 100vw;
+  margin: 5px;
+  flex-wrap: wrap;
 }
 
-.cardapio h3, .container-cardapio {
+.cardapio h3,
+.container-cardapio {
   flex: 1 1 100vw;
   margin: 5px;
 }
 
 .container-cardapio {
-    display: flex;
-    height: 100px;
+  display: flex;
+  height: 100px;
 }
 
 .pratos {
@@ -88,29 +92,45 @@ main {
 }
 
 aside {
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100vw;
+  margin: 10px;
+  border: 1px solid red;
+  height: auto; /* deixa o aside se ajustar à altura da imagem visível */
 }
 
-#promocoes {
-  display: flex;
-  height: 80px;
-  flex: 1 1 100vw;
-  background: #c2c2c2;
-  margin: 10px;
+/* imagens dentro do aside */
+.img-horizontal,
+.img-vertical {
+  width: 100%;
+  height: auto; /* altura proporcional à largura */
+  object-fit: contain; /* mantém proporção da imagem */
+}
+
+/* estado inicial */
+.img-horizontal {
+  display: block; /* mostra horizontal por padrão */
+}
+
+.img-vertical {
+  display: none; /* esconde vertical por padrão */
 }
 
 footer {
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100vw;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .container-footer {
   display: flex;
   flex-direction: column;
-  flex: 1 1 100vw;
+
   align-items: center;
   justify-content: center;
 }
@@ -119,56 +139,66 @@ footer {
   display: flex;
 }
 
-@media only screen and (min-width: 838px){
-    nav {
-        flex: 1 1 90px;
-        flex-direction: column;
-    }
-    
-    .container-menu {
-        margin: 5px;
-    }
-    
-    #promocoes {
-      height: 100vh;
-    
-    }
+@media only screen and (min-width: 838px) {
+  nav {
+    flex: 1 1 90px;
+    max-height: 300px;
+    flex-direction: column;
+  }
+
+  .container-menu {
+    margin: 5px;
+  }
+
+  aside {
+    flex: 1 1 100vw;
+  }
+
+  .img-horizontal {
+    display: none !important;
+  }
+
+  .img-vertical {
+    display: block !important;
+  }
+
 }
 
-@media only screen and (max-width: 717px){
-    header{
-        order: 0;
-    }
+@media only screen and (max-width: 717px) {
+  header {
+    order: 0;
+  }
 
-      aside {
-        order: 2;
-    }
+  aside {
+    order: 2;
+  }
 
-    nav{
-        order:1;
-    }
-    main {
-        order: 3;
-    }
+  nav {
+    order: 1;
+  }
 
-    footer {
-        order: 4;
-        flex-direction: column;
-    }
-    
-    .container-footer{
-      max-height: 100px;
-    }
-    
-    #informacoes {
-      order: 1;
-    }
-    
-    #instagram {
-      order: 0;
-    }
-    
-    #avisos {
-      order: 2;
-    }
+  main {
+    order: 3;
+  }
+
+  footer {
+    order: 4;
+    flex-direction: column;
+  }
+
+  .container-footer {
+    max-height: 100px;
+  }
+
+  #informacoes {
+    order: 1;
+  }
+
+  #instagram {
+    order: 0;
+  }
+
+  #avisos {
+    order: 2;
+  }
 }
