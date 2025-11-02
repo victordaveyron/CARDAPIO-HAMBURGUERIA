@@ -1,13 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color:inherit
-}
 body {
     display: flex;
     margin: 3px;
@@ -18,7 +15,6 @@ body {
 header,nav, main, aside, footer {
     margin: 3px;
     display: flex;
-    background: #a1a1a1
 }
 
 header {
@@ -32,14 +28,12 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #c2c2c2;
     height: 50px;
 }
 
 header a {
     display: flex;
     margin-left: auto;
-    background: #c2c2c2;
 }
 
 nav {
@@ -54,7 +48,6 @@ nav {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background: #c2c2c2;
   width: 80px;
   height: 80px;
   margin: 5px 0;
@@ -67,7 +60,6 @@ main {
 
 .cardapio {
     display: flex;
-    background: #c2c2c2;
     flex: 1 1 100vw;
     margin: 5px;
     flex-wrap: wrap;
@@ -76,7 +68,6 @@ main {
 .cardapio h3, .container-cardapio {
   flex: 1 1 100vw;
   margin: 5px;
-  border: 1px solid red;
 }
 
 .container-cardapio {
@@ -85,7 +76,6 @@ main {
 }
 
 .pratos {
-  border: 1px solid red;
   flex: 1 1 100vw;
   margin: 3px 10px;
 }
@@ -94,7 +84,6 @@ main {
 .item {
   display: flex;
   justify-content: space-between;
-  border: 1px solid blue;
   flex: 1 1 100vw;
 }
 
@@ -102,39 +91,38 @@ aside {
     justify-content: center;
     align-items: center;
     flex: 1 1 200px;
-    padding: 3px;
 }
 
 #promocoes {
   display: flex;
   height: 80px;
   flex: 1 1 100vw;
+  background: #c2c2c2;
   margin: 10px;
 }
 
 footer {
-    display: felx;
     justify-content: center;
+    align-items: center;
     flex: 1 1 100vw;
-    height: 200px;
-    
 }
 
 .container-footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex: 1 1 100vw;
-  background: #c2c2c2;
-  margin: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-icons {
+  display: flex;
 }
 
 @media only screen and (min-width: 838px){
     nav {
         flex: 1 1 90px;
         flex-direction: column;
-        max-height: 500px;
     }
     
     .container-menu {
@@ -142,13 +130,8 @@ footer {
     }
     
     #promocoes {
-      height: 400px;
+      height: 100vh;
     
-    }
-
-    aside {
-      max-height: 500px;
-
     }
 }
 
@@ -177,4 +160,15 @@ footer {
       max-height: 100px;
     }
     
+    #informacoes {
+      order: 1;
+    }
+    
+    #instagram {
+      order: 0;
+    }
+    
+    #avisos {
+      order: 2;
+    }
 }

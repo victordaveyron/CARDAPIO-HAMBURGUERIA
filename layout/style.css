@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'foodzone';
+  src: url('fonts/foodzone.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  --lenha: #300201;
+  --vermelho: #5c0f09;
+  --vermelho-fogo: #961011;
+  --alho: #eaddcd;
+  --queijo: #d68209;
+}
+
+body {
+  font-family: "roboto", Sans-Serif;
+  background-color: var(--alho);
+}
+
+#titulo-principal {
+   font-family: "foodzone" , Sans-Serif;
+   color: var(--queijo);
+   font-size: 24pt;
+   
+}
+
+header a {
+  color: var(--lenha);
+  font-weight: bold;
+}
+
+.container-menu {
+  border-radius: 10px; 
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+
+.container-menu p {
+  color: var(--lenha);
+}
+
+.cardapio {
+  background-color: var(--alho);
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+  border-radius: 10px;
+  }
+
+#hamburguer h3, #fritas h3 {
+  font-family: "foodzone", Sans-Serif;
+  color: var(--alho);
+  font-size: 24pt;
+}
+
+#hamburguer .item, #fritas .item {
+  font-weight: bold;
+  font-size: 14pt;
+  color: var(--vermelho-fogo);
+}
+
+#hamburguer p, #fritas p {
+  color: var(--alho);
+}
+
+#hamburguer, #fritas {
+  background-color: var(--queijo)
+}
+
+.delivery, #btn-delivery {
+  display: flex;
+  justify-content: center;
+  aling-content: center;
+}
+
+.delivery {
+  flex: 1 1 100vw;
+  margin: 5px;
+}
+
+#btn-delivery {
+  margin: 3px;
+  padding: 7px;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.8);
+  font-size: 24pt;
+  font-weight: bold;
+  color: var(--queijo);
+  background-color: var(--alho);
+  border-style: none;
+}
+
+#hamburguer .delivery #btn-delivery, #fritas .delivery #btn-delivery {
+  margin: 3px;
+  padding: 7px;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.8);
+  font-size: 24pt;
+  font-weight: bold;
+  color: var(--alho);
+  background-color: var(--queijo);
+  border-style: none;
+} 
+
+#icon-whats {
+  height: 30px;
+  padding-right: 5px;
+}
+
+#hot-dog h3, #trio h3 {
+  font-family: "foodzone", Sans-Serif;
+  font-size: 24pt;
+}
+
+#hot-dog .item, #trio .item {
+  font-size: 14pt;
+  font-weight: bold;
+  color: var(--vermelho-fogo);
+}
+
+#hot-dog p, #hot-dog h3, #trio p, #trio h3 {
+  color: var(--queijo);
+}
+.pratos p {
+  font-size: 10pt;
+}
+
+aside {
+  
+}
+
+aside img {
+  display: flex;
+  flex: 1 1 100vw;
+  max-height: 90px;
+  border-radius: 10px;
+}
+footer {
+  background-color: var(--queijo);
+}
+
+.container-footer {
+  color: var(--alho);
+  text-align: center;
+  font-size: 10pt;
+  
+}
+
+
+#agradecimento, #instagram, #informacoes {
+  gap: 1rem;
+}
