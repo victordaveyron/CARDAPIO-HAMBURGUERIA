@@ -1,168 +1,122 @@
-@font-face {
-  font-family: 'roboto';
-  src: url('fonts/roboto.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'foodzone';
-  src: url('fonts/foodzone.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 :root {
   --lenha: #300201;
-  --vermelho: #5c0f09;
+  --vemelho: #5c0f09;
   --vermelho-fogo: #961011;
   --alho: #eaddcd;
   --queijo: #d68209;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  
+}
+
+a {
+  color:inherit;
+}
+
 body {
-  font-family: "roboto", Sans-Serif;
-  background-color: var(--alho);
+  background-color: var(--lenha);
 }
 
-#titulo-principal {
-  font-family: "foodzone", Sans-Serif;
-  color: var(--queijo);
-  font-size: 24pt;
-
+.main-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 15rem;
+  padding-top: 4rem;
 }
 
-header a {
-  color: var(--lenha);
-  font-weight: bold;
+.img-main {
+  width: 25rem;
+  margin-top: -2rem;
 }
 
-.container-menu {
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+.botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.container-menu p {
-  color: var(--lenha);
-}
-
-.cardapio {
-  background-color: var(--alho);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-}
-
-#hamburguer h3,
-#fritas h3 {
-  font-family: "foodzone", Sans-Serif;
+#btn-whats {
+  width: 20rem;
+  height: 3.5rem;
+  
+  background-color: var(--lenha);
   color: var(--alho);
+  
+  border-radius: 50px;
+  border: 3px solid var(--alho);
   font-size: 24pt;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(5,7,6,0.5);
+  
 }
 
-#hamburguer .item,
-#fritas .item {
-  font-weight: bold;
-  font-size: 14pt;
-  color: var(--vermelho-fogo);
-}
 
-#hamburguer p,
-#fritas p {
+#btn-menu {
+  width: 20rem;
+  height: 3.5rem;
+  
+  background-color: var(--lenha);
   color: var(--alho);
+  
+  border-radius: 50px;
+  border: 3px solid var(--alho);
+  font-size: 24pt;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(5,7,6,0.5);
+  
 }
 
-#hamburguer,
-#fritas {
-  background-color: var(--queijo)
+#btn-whats, #btn-menu {
+  transition: 0.2s;
 }
 
-.delivery,
-#btn-delivery {
+#btn-whats:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgb(245, 245, 245, 0.5);
+  transform: scale(1.05);
+}
+
+#btn-menu:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgb(245, 245, 245, 0.5);
+  transform: scale(1.05);
+}
+
+.icons {
   display: flex;
   justify-content: center;
-  aling-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
 }
 
-.delivery {
-  flex: 1 1 100vw;
-  margin: 5px;
+.icon {
+  width: 3rem;
+  height: 3rem;
 }
 
-#btn-delivery {
-  margin: 3px;
-  padding: 7px;
-  width: 250px;
-  height: 50px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-  font-size: 24pt;
-  font-weight: bold;
-  color: var(--queijo);
-  background-color: var(--alho);
-  border-style: none;
+.icon {
+  transition: 0.2s;
 }
 
-#hamburguer .delivery #btn-delivery,
-#fritas .delivery #btn-delivery {
-  margin: 3px;
-  padding: 7px;
-  width: 250px;
-  height: 50px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-  font-size: 24pt;
-  font-weight: bold;
-  color: var(--alho);
-  background-color: var(--queijo);
-  border-style: none;
-}
-
-#icon-whats {
-  height: 30px;
-  padding-right: 5px;
-}
-
-#hot-dog h3,
-#trio h3 {
-  font-family: "foodzone", Sans-Serif;
-  font-size: 24pt;
-}
-
-#hot-dog .item,
-#trio .item {
-  font-size: 14pt;
-  font-weight: bold;
-  color: var(--vermelho-fogo);
-}
-
-#hot-dog p,
-#hot-dog h3,
-#trio p,
-#trio h3 {
-  color: var(--queijo);
-}
-
-.pratos p {
-  font-size: 10pt;
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 
 
-footer {
-  background-color: var(--queijo);
-}
 
-.container-footer {
-  color: var(--alho);
-  text-align: center;
-  font-size: 10pt;
-
-}
-
-
-#agradecimento,
-#instagram,
-#informacoes {
-  margin: 20px;
-}

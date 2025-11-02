@@ -97,7 +97,6 @@ aside {
   align-items: center;
   flex: 1 1 200px;
   margin: 10px;
-  border: 1px solid red;
   height: auto; /* deixa o aside se ajustar à altura da imagem visível */
 }
 
