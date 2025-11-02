@@ -103,7 +103,6 @@ aside {
 /* imagens dentro do aside */
 .img-horizontal,
 .img-vertical {
-  border-radius: 10px;
   width: 100%;
   height: auto; /* altura proporcional à largura */
   object-fit: contain; /* mantém proporção da imagem */
