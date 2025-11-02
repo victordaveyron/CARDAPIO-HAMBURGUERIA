@@ -95,7 +95,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 100vw;
+  flex: 1 1 200px;
   margin: 10px;
   border: 1px solid red;
   height: auto; /* deixa o aside se ajustar à altura da imagem visível */
@@ -151,7 +151,8 @@ footer {
   }
 
   aside {
-    flex: 1 1 100vw;
+    flex: 1 1 200px;
+    max-height: 435px;
   }
 
   .img-horizontal {
@@ -160,18 +161,47 @@ footer {
 
   .img-vertical {
     display: block !important;
+    object-fit: contain;
   }
 
 }
 
-@media only screen and (max-width: 717px) {
+@media only screen and (min-width: 732px){
+ aside {
+    flex: 1 1 200px;
+    max-height: 435px;
+  }
+
+  .img-horizontal {
+    display: none !important;
+  }
+
+  .img-vertical {
+    display: block !important;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 731px) {
   header {
     order: 0;
   }
 
-  aside {
+    aside {
+    flex: 1 1 200px;
+    max-height: 435px;
     order: 2;
+    }
+
+    .img-horizontal {
+    display: block !important;
   }
+
+  .img-vertical {
+    display: none !important;
+    object-fit: contain;
+  }
+  
 
   nav {
     order: 1;
